@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111727;
+}
+
+.res {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+ul {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+img {
+
+  background-color: #111727;
+}
+
+/* .course-category-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid hsl(0, 0%, 67%);
+  border-radius: 80px;
+  padding: 25px;
+  transition: var(--default-transition);
+} */
+
+.projcard {
+  border: 1px solid hsl(0, 100%, 50%);
+  border-radius: 80px;
+  background-color: #ffff;
+  border: 1px solid #ffff;
+  min-height: 14em;
+  width: 28em;
+  overflow: hidden;
+  /**/
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+
+.projcard:hover {
+  background-color: #111727;
+  color: aliceblue;
+
+}
+
+.projcard:hover {
+  transform: scale(1.1);
+}
+
+.projcard:hover .projimg {
+  opacity: 0.9;
+}
+
+.projimg img {
+  width: 100%;
+  transition: 0.7s ease;
+}
+
+.projimg img:hover {
+  opacity: 4;
+  transform: scale(1.1);
+}
+
+audio {
+  width: 100%;
+  outline: none;
+}
+
+/* style audio */
+
+audio::-webkit-media-controls-panel {
+  transition: 0.7s ease;
+  width: 100%;
+
+}
+
+audio::-webkit-media-controls-panel:hover {
+  transform: scale(1.05);
+  background-color: #56AEFF;
+}
+
+audio::-webkit-media-controls-mute-button {
+  background-color: #B1D4E0;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button:hover {
+  background-color: #111727;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  color: #011c68;
+  font-size: 13px;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  color: #536aab;
+  font-size: 13px;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  background-color: #56AEFF;
+  border-radius: 25px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.ee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 375px)  {
+  .projcard {
+    width: 17em;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575px) {
+  .projcard {
+    width: 20em;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .projcard {
+    width: 25em;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 850px)  {
+  .projcard {
+    width: 23em;
+  }
+}
+
+
+
+
+@media (max-width: 992px) and (min-width: 850px) {
+  .projcard {
+    width: 25em;
+  }
+}
+
